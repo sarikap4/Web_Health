@@ -1,0 +1,358 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0765)https://wix-visual-data.appspot.com/app/widget?cacheKiller=1519320558639&compId=comp-jctmkpga&deviceType=desktop&height=239&instance=-JdN7Y5vK12Xx6UFTJzNeI1KwtFvwQZch6uQC23MTAU.eyJpbnN0YW5jZUlkIjoiZGE2YTU5NGUtZmRkYS00MjNiLThiYjItOGFjMWI1MWViODk3IiwiYXBwRGVmSWQiOiIxMzQxMzlmMy1mMmEwLTJjMmMtNjkzYy1lZDIyMTY1Y2ZkODQiLCJzaWduRGF0ZSI6IjIwMTgtMDItMjJUMTc6Mjk6MDEuMTY2WiIsInVpZCI6bnVsbCwiaXBBbmRQb3J0IjoiMjE2LjIxMS4xMDYuMTg3LzQ5MzMyIiwidmVuZG9yUHJvZHVjdElkIjpudWxsLCJkZW1vTW9kZSI6ZmFsc2UsImFpZCI6ImExNzVmYzcyLWJiNjktNDBiNC04Y2ZiLTQ5MDM5M2JmNmUzZiIsImJpVG9rZW4iOiIxODI3ZDRkZi00YWMyLTBmYjQtMGE2Mi1iYmI5OTQ1YzZmNjIiLCJzaXRlT3duZXJJZCI6IjlmYmE0YWZjLWUyNTktNDcxMS1hOTlmLTc1ZDE2OGM1YmUyMSJ9&locale=en&pageId=hytax&viewMode=site&vsi=2a412556-4e0e-4fbe-afa1-49845147f38b&width=743 -->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Visual Data</title>
+	<link href="./bootstrap.min.css" rel="stylesheet">
+	<link href="./bootstrap-responsive.min.css" rel="stylesheet">
+	<script type="text/javascript" src="./jquery.min.js.download"></script>
+
+	<link href="./widget.css" rel="stylesheet" type="text/css">
+	<script src="./widget.js.download"></script>
+	<style wix-style="">
+
+				body {
+					margin: 0;
+					padding: 0;
+					background-color: transparent;
+				}
+
+				#theTable > tbody {
+					font: normal normal normal 15px/1.4em proxima-n-w01-reg,sans-serif;
+				}
+
+				#theTable > thead {
+					font: normal normal normal 17px/1.4em proxima-n-w01-reg,sans-serif;
+				}
+
+					#theTable > thead > tr > th {
+						color: #414141;
+						background-color: #E8E6E6;
+						background-image: none;
+						vertical-align: top;
+					}
+
+				#theTable > tbody > tr {
+					color: #213D4D;
+				}
+
+				.footable-row-detail-name {
+					color: #414141;
+					background-color: #E8E6E6;
+					border: 1px solid #FFFFFF;
+					font: normal normal normal 17px/1.4em proxima-n-w01-reg,sans-serif;
+					/* to hide the inside headers in the mobile expand view
+					display:none;
+				 */
+				}
+
+				body {
+					border-color: #FFFFFF;
+				}
+
+				#theTable.isInnerColor {
+					border-top-color: #FFFFFF;
+					border-bottom-color: #FFFFFF;
+				}
+
+				#theTable.isInnerColor {
+					border-right: none;
+					border-left: none;
+				}
+
+				.footable-row-detail-value {
+					border: 1px solid #FFFFFF;
+					font: normal normal normal 15px/1.4em proxima-n-w01-reg,sans-serif;
+				}
+
+				.footable-sort-indicator {
+					font: normal normal normal 15px/1.4em proxima-n-w01-reg,sans-serif;
+				}
+
+				tr.footableOdd + tr.footable-row-detail > td > div > table > tbody > tr > td.footable-row-detail-value {
+					background-color: #D9F0FD
+				}
+
+				tr.footableEven + tr.footable-row-detail > td > div > table > tbody > tr > td.footable-row-detail-value {
+					background-color: #BEE5FB;
+				}
+
+				.footableOdd {
+					background-color: #D9F0FD;
+				}
+
+				.footableEven {
+					background-color: #BEE5FB;
+				}
+
+
+				.footable > tbody > tr:hover {
+					background-color: #7FCCF7;
+				}
+
+				.footable,
+				.footable > thead > tr > th,
+				.footable > tbody > tr > td {
+					border-color: #FFFFFF;
+					border-left-color: #FFFFFF;
+				}
+
+					.footable .pagination > ul > li > a {
+						border-color: #FFFFFF;
+					}
+
+					.filter > thead > tr > th,
+					.footable > thead > tr > th,
+					.footable > thead > tr > td {
+						background-color: #FFFFFF;
+						background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#E8E6E6));
+						background-image: -webkit-linear-gradient(top, #FFFFFF, #E8E6E6);
+						background-image: -moz-linear-gradient(top, #FFFFFF, #E8E6E6);
+						background-image: -ms-linear-gradient(top, #FFFFFF, #E8E6E6);
+						background-image: -o-linear-gradient(top, #FFFFFF, #E8E6E6);
+						background-image: linear-gradient(to bottom, #FFFFFF, #E8E6E6);
+					}
+
+					.footable > thead > tr > th,
+					.footable > thead > tr > td {
+						background-color: #E8E6E6;
+					}
+
+
+					.footable > tfoot > tr > th,
+					.footable > tfoot > tr > td {
+						background-color: #FFFFFF;
+						background-image: -webkit-gradient(linear, left top, left bottom, from(#E8E6E6), to(#FFFFFF));
+						background-image: -webkit-linear-gradient(top, #E8E6E6, #FFFFFF);
+						background-image: -moz-linear-gradient(top, #E8E6E6, #FFFFFF);
+						background-image: -ms-linear-gradient(top, #E8E6E6, #FFFFFF);
+						background-image: -o-linear-gradient(top, #E8E6E6, #FFFFFF);
+						background-image: linear-gradient(to bottom, #E8E6E6, #FFFFFF);
+					}
+
+					.footable .pagination > ul > .disabled > span,
+					.footable .pagination > ul > .disabled > a,
+					.footable .pagination > ul > .disabled > a:hover,
+					.footable .pagination > ul > .disabled > a:focus {
+						background-color: #E8E6E6;
+					}
+
+					.footable .pagination > ul > li > a:hover,
+					.footable .pagination > ul > li > a:focus,
+					.footable .pagination > ul > .active > a,
+					.footable .pagination > ul > .active > span {
+						background-color: #C7C7C7;
+					}
+
+				.preview, .error {
+					display: none;
+					background-color: white;
+				}
+
+				.option {
+					width: 120px;
+				}
+
+				.searchBox {
+					width: 147px;
+					height: 23px;
+					-webkit-border-radius: 3px;
+					-moz-border-radius: 3px;
+					border-radius: 3px;
+					background-color: rgba(255,255,255,0.8);
+					color: #000; /*#414141;*/
+					-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.4);
+					-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.4);
+					box-shadow: inset 0 1px 2px rgba(0,0,0,.4);
+					margin-top: 1px;
+					outline: 0;
+					border: 0;
+					padding: 0 6px;
+					font-size: 12px;
+				}
+
+				::-webkit-input-placeholder {
+					color: #000; /*#414141;*/
+					opacity: 0.5;
+				}
+
+				:-moz-placeholder { /* Firefox 18- */
+					color: #000;
+					opacity: 0.5;
+				}
+
+				::-moz-placeholder { /* Firefox 19+ */
+					color: #000;
+					opacity: 0.5;
+				}
+
+				:-ms-input-placeholder {
+					color: #000;
+					opacity: 0.5;
+				}
+				/*       .filter{
+					border-collapse: separate;
+					border-spacing: 0;
+					border-width: 1px 1px 0 1px;
+					border-style: solid;
+					color: #444444;
+					background: #ffffff;
+					margin :0;
+				}
+		*/
+				#tableWrapper::-webkit-scrollbar {
+					-webkit-appearance: none;
+					width: 10px;
+					height: 10px;
+					border: 1px solid #FFFFFF
+				}
+
+				#tableWrapper::-webkit-scrollbar-track {
+					background-color: #D9F0FD
+				}
+
+				#tableWrapper::-webkit-scrollbar-corner {
+					background-color: #BEE5FB
+				}
+
+				#tableWrapper::-webkit-scrollbar-thumb {
+					border-radius: 5px;
+					background-color: #BEE5FB;
+					border: solid 1px #D9F0FD;
+				}
+					/*
+				#tableWrapper::-webkit-scrollbar-thumb:horizontal{border-color:#FFFFFF}
+		*/
+					#tableWrapper::-webkit-scrollbar-thumb:hover {
+						background-color: #7FCCF7;
+					}
+	</style>
+	<script>
+        var settings = {"title":null,"csvUrl":null,"origVersion":null,"viewType":"table","data":{"csvString":"Doctor ID,Doctor Name,Doctor Specialization,Doctor Avail,Action\n1,Safvan Dhukka,MBBS,6 AM-11 PM,\n2,3,4,5,\n5,4,3,2,\n3,5,6,3,\n","csvUrl":"https://docs.google.com/spreadsheets/d/e/2PACX-1vTkGJh6alGDPbYoNpSD2qG7Q1Vnr0UWBHdeg7Diy-avlg4GjpMEpSQkdxZssryQK8TnKCkKmK52A2xa/pub?output=csv","type":"csvString"},"tableParams":{"filterText":"Search"},"pieChartParams":{},"columnChartParams":{},"lineChartParams":{},"areaChartParams":null};
+        var endpoint = 'desktop';
+        var instance= '-JdN7Y5vK12Xx6UFTJzNeI1KwtFvwQZch6uQC23MTAU.eyJpbnN0YW5jZUlkIjoiZGE2YTU5NGUtZmRkYS00MjNiLThiYjItOGFjMWI1MWViODk3IiwiYXBwRGVmSWQiOiIxMzQxMzlmMy1mMmEwLTJjMmMtNjkzYy1lZDIyMTY1Y2ZkODQiLCJzaWduRGF0ZSI6IjIwMTgtMDItMjJUMTc6Mjk6MDEuMTY2WiIsInVpZCI6bnVsbCwiaXBBbmRQb3J0IjoiMjE2LjIxMS4xMDYuMTg3LzQ5MzMyIiwidmVuZG9yUHJvZHVjdElkIjpudWxsLCJkZW1vTW9kZSI6ZmFsc2UsImFpZCI6ImExNzVmYzcyLWJiNjktNDBiNC04Y2ZiLTQ5MDM5M2JmNmUzZiIsImJpVG9rZW4iOiIxODI3ZDRkZi00YWMyLTBmYjQtMGE2Mi1iYmI5OTQ1YzZmNjIiLCJzaXRlT3duZXJJZCI6IjlmYmE0YWZjLWUyNTktNDcxMS1hOTlmLTc1ZDE2OGM1YmUyMSJ9';
+        settings = jQuery.extend({}, settings);
+        var version = '1-2-4.407321703058612161';
+        var pageManager;
+//        google.load("visualization", "1", {packages:["corechart"]});
+    function fixErrorVal(value){
+        if(value.indexOf('"')>=0 || value.indexOf(',')>=0){
+            value = value.replace(/"/g,'""');
+            value = '"'+value+'"';
+        }
+        return value;
+    }
+        $(document).ready(function() {
+            pageManager = new PageManager();
+            pageManager.init(settings,endpoint,
+                {
+                    loaderErrorTitle:fixErrorVal('We are having problems loading your table information.'),
+                    loaderErrorBody:fixErrorVal('Make sure to follow the instructions in the Settings Panel'),
+                    loaderErrorTitleEmpty:fixErrorVal('Hey, your table is empty.'),
+                    loaderErrorBodyEmpty:fixErrorVal('You\'ll need to add some information'),
+                    loaderErrorTitleCsv:fixErrorVal('Oops! The URL you entered does not point to a google spreadsheet or a CSV file.'),
+                    loaderErrorBodyCsv:fixErrorVal('Please check the link and try again'),
+                    loaderErrorTitleViewer:fixErrorVal('This table is empty.'),
+                    loaderErrorBodyViewer:fixErrorVal('Nothing to see here'),
+                    loaderErrorTitle400:fixErrorVal('Oops! The URL you entered doesn\'t work.'),
+                    loaderErrorBody400:fixErrorVal('Please check the link and try again'),
+                    loaderErrorTitle403:fixErrorVal('Humm, it seems your Google spreadsheet is set to private.'),
+                    loaderErrorBody403:fixErrorVal('To make it public: Open App Settings > Go to Data Source and follow the instructions'),
+                    loaderErrorTitle404:fixErrorVal('Oops! The URL you entered doesn\'t exist.'),
+                    loaderErrorBody404:fixErrorVal('Please check the link and try again'),
+                    loaderErrorTitle500:fixErrorVal('Ouch! Something broke.'),
+                    loaderErrorBody500:fixErrorVal('The server sending the table information reported a problem'),
+                    loaderErrorTitle503:fixErrorVal('Ouch! Something broke.'),
+                    loaderErrorBody503:fixErrorVal('The server sending the table information is temporarily offline, try again in a few minutes'),
+                 },
+                    '-JdN7Y5vK12Xx6UFTJzNeI1KwtFvwQZch6uQC23MTAU.eyJpbnN0YW5jZUlkIjoiZGE2YTU5NGUtZmRkYS00MjNiLThiYjItOGFjMWI1MWViODk3IiwiYXBwRGVmSWQiOiIxMzQxMzlmMy1mMmEwLTJjMmMtNjkzYy1lZDIyMTY1Y2ZkODQiLCJzaWduRGF0ZSI6IjIwMTgtMDItMjJUMTc6Mjk6MDEuMTY2WiIsInVpZCI6bnVsbCwiaXBBbmRQb3J0IjoiMjE2LjIxMS4xMDYuMTg3LzQ5MzMyIiwidmVuZG9yUHJvZHVjdElkIjpudWxsLCJkZW1vTW9kZSI6ZmFsc2UsImFpZCI6ImExNzVmYzcyLWJiNjktNDBiNC04Y2ZiLTQ5MDM5M2JmNmUzZiIsImJpVG9rZW4iOiIxODI3ZDRkZi00YWMyLTBmYjQtMGE2Mi1iYmI5OTQ1YzZmNjIiLCJzaXRlT3duZXJJZCI6IjlmYmE0YWZjLWUyNTktNDcxMS1hOTlmLTc1ZDE2OGM1YmUyMSJ9','comp-jctmkpga', version
+            );
+        });
+
+	</script>
+	<script src="./polyfill.min.js(1).download" id="dynamic_script_POLYFILL"></script>
+	<style wix-style="">
+		.Title {
+			font: normal normal normal 40px/1.4em proxima-n-w01-reg,sans-serif;
+		}
+
+		.Menu {
+			font: normal normal normal 16px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
+		}
+
+		.Page-title {
+			font: normal normal normal 28px/1.4em proxima-n-w01-reg,sans-serif;
+		}
+
+		.Heading-XL {
+			font: normal normal normal 60px/1.4em proxima-n-w01-reg,sans-serif;
+		}
+
+		.Heading-L {
+			font: normal normal normal 40px/1.4em proxima-n-w01-reg,sans-serif;
+		}
+
+		.Heading-M {
+			font: normal normal normal 25px/1.4em proxima-n-w01-reg,sans-serif;
+		}
+
+		.Heading-S {
+			font: normal normal normal 22px/1.4em proxima-n-w01-reg,sans-serif;
+		}
+
+		.Body-L {
+			font: normal normal normal 17px/1.4em proxima-n-w01-reg,sans-serif;
+		}
+
+		.Body-M {
+			font: normal normal normal 15px/1.4em proxima-n-w01-reg,sans-serif;
+		}
+
+		.Body-S {
+			font: normal normal normal 14px/1.4em proxima-n-w01-reg,sans-serif;
+		}
+
+		.Body-XS {
+			font: normal normal normal 12px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
+		}
+		}
+	</style>
+	<style>
+		:focus {
+			box-shadow: inset 0 0 0 1px rgba(255,255,255,0.9), 0 0 1px 2px #3899EC;
+		}
+	</style>
+	<link type="text/css" rel="stylesheet" href="./languages.css">
+	<style></style>
+</head>
+<body>
+	<div class="error">
+		<div id="errorTitle" style="font-weight:bold">&nbsp;</div>
+		<div id="errorData">&nbsp;</div>
+	</div>
+	<div id="chartTableDiv" style="">
+		<table id="filterTable" class="filter outerBorder" style="width:100%;">
+			<thead>
+				<tr>
+					<th colspan="100%" style="height:37px;text-align: center;">
+						<div id="filterBox" style=""><input id="filterInput" type="text" class="searchBox" placeholder="Search"></div>
+					</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+	<div id="tableWrapper" style="overflow: auto; max-height: 176px;">
+		<table id="theTable" class="footable table outerBorder footable-loaded isInnerColor" style="width: 100%; margin: 0px;">
+			<thead><tr><th id="thCol0" data-type="numeric" class="footable-sortable">Doctor ID<span class="footable-sort-indicator"></span></th><th id="thCol1" data-type="alpha" class="footable-sortable">Doctor Name<span class="footable-sort-indicator"></span></th><th id="thCol2" data-type="alpha" class="footable-sortable">Doctor Specialization<span class="footable-sort-indicator"></span></th><th id="thCol3" data-type="alpha" class="footable-sortable">Doctor Avail<span class="footable-sort-indicator"></span></th><th id="thCol4" data-type="numeric" class="footable-sortable">Action<span class="footable-sort-indicator"></span></th></tr></thead>
+			<tbody><tr class="footableOdd"><td>1</td><td>Safvan Dhukka</td><td>MBBS</td><td>6 AM-11 PM</td><td></td></tr><tr class="footableEven"><td>2</td><td>3</td><td>4</td><td>5</td><td></td></tr><tr class="footableOdd"><td>5</td><td>4</td><td>3</td><td>2</td><td></td></tr><tr class="footableEven"><td>3</td><td>5</td><td>6</td><td>3</td><td></td></tr></tbody>
+		</table>
+	</div>
+	<table id="pagerFilter" class="footable footer outerBorder" style="width: 100%; margin: 0px;">
+		<tfoot id="noPager"><tr><td colspan="100%" style="height:26px;"></td></tr></tfoot>
+	</table>
+	<div id="chartDiv" tyle="display:none"></div>
+
+	<script type="text/javascript" src="./wix-private.min.js.download"></script>
+</body>
+</html>
